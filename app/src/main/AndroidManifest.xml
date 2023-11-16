@@ -23,7 +23,8 @@
             android:screenOrientation="portrait"
             android:noHistory="true"
             android:launchMode="singleInstance"
-            android:theme="@style/StartTheme">
+            android:theme="@style/StartTheme"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,12 +43,6 @@
                     android:pathPattern="/connect"/>
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".features.ConnectionsActivity"
-            android:label="@string/connections_title"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
 
         <activity
             android:name=".features.ConnectActivity"
